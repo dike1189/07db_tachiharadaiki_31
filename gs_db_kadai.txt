@@ -1,0 +1,59 @@
+-- phpMyAdmin SQL Dump
+-- version 4.9.7
+-- https://www.phpmyadmin.net/
+--
+-- ホスト: localhost:3306
+-- 生成日時: 2021 年 4 月 08 日 13:58
+-- サーバのバージョン： 5.7.32
+-- PHP のバージョン: 7.4.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- データベース: `gs_db_kadai`
+--
+
+-- --------------------------------------------------------
+
+--
+-- テーブルの構造 `gs_an_kadai_table`
+--
+
+CREATE TABLE `gs_an_kadai_table` (
+  `id` int(12) NOT NULL,
+  `name` varchar(64) NOT NULL,
+  `url` text NOT NULL,
+  `comment` text NOT NULL,
+  `indate` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- テーブルのデータのダンプ `gs_an_kadai_table`
+--
+
+INSERT INTO `gs_an_kadai_table` (`id`, `name`, `url`, `comment`, `indate`) VALUES
+(5, '影響力の武器', 'https://www.amazon.co.jp/%E5%BD%B1%E9%9F%BF%E5%8A%9B%E3%81%AE%E6%AD%A6%E5%99%A8-%E7%AC%AC%E4%B8%89%E7%89%88-%E3%81%AA%E3%81%9C%E3%80%81%E4%BA%BA%E3%81%AF%E5%8B%95%E3%81%8B%E3%81%95%E3%82%8C%E3%82%8B%E3%81%AE%E3%81%8B-%E3%83%AD%E3%83%90%E3%83%BC%E3%83%88%E3%83%BBB%E3%83%BB%E3%83%81%E3%83%A3%E3%83%AB%E3%83%87%E3%82%A3%E3%83%BC%E3%83%8B/dp/4414304229', '世界でロングセラーを続ける消費者のための心理学書\r\n', '2021-04-04 15:11:19'),
+(7, 'アイデアのつくり方', 'https://www.amazon.co.jp/dp/4484881047/ref=sspa_dk_detail_4?psc=1&pd_rd_i=4484881047p13NParams&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyOEJSMk5MWU5HSTVVJmVuY3J5cHRlZElkPUEwNTQ2NTM0MVROMzROSU1PR0cwTSZlbmNyeXB0ZWRBZElkPUEyMzA2MTNNVkRQM1ZWJndpZGdldE5hbWU9c3BfZGV0YWlsJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==', '60分で読めるけれど一生あなたを離さない本。《アイデアをどうやって手に入れるか》という質問への解答がここにある。\r\n', '2021-04-04 15:12:18'),
+(8, 'ファスト&スロー(上) あなたの意思はどのように決まるか?', 'https://www.amazon.co.jp/%E3%83%95%E3%82%A1%E3%82%B9%E3%83%88-%E3%82%B9%E3%83%AD%E3%83%BC-%E4%B8%8A-%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E6%84%8F%E6%80%9D%E3%81%AF%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB%E6%B1%BA%E3%81%BE%E3%82%8B%E3%81%8B-%E3%83%8F%E3%83%A4%E3%82%AB%E3%83%AF%E3%83%BB%E3%83%8E%E3%83%B3%E3%83%95%E3%82%A3%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E6%96%87%E5%BA%AB/dp/4150504105/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&dchild=1&keywords=%E3%83%95%E3%82%A1%E3%82%B9%E3%83%88%E3%82%A2%E3%83%B3%E3%83%89%E3%82%B9%E3%83%AD%E3%83%BC&qid=1617516748&s=books&sr=1-1', '間は必ずしも合理的でない。では、どう合理的でないのか。\r\n本書を片手に、人間のファストな「直感」とスローな「論理」を科学しよう。', '2021-04-04 15:13:07'),
+(9, 'a', '', '', '2021-04-08 22:05:01');
+
+--
+-- ダンプしたテーブルのインデックス
+--
+
+--
+-- テーブルのインデックス `gs_an_kadai_table`
+--
+ALTER TABLE `gs_an_kadai_table`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- ダンプしたテーブルの AUTO_INCREMENT
+--
+
+--
+-- テーブルの AUTO_INCREMENT `gs_an_kadai_table`
+--
+ALTER TABLE `gs_an_kadai_table`
+  MODIFY `id` int(12) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
